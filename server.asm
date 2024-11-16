@@ -64,7 +64,7 @@ child:
 
     mov rdi, 4
     mov rax, 0
-    lea rsi, [rip + req_body]
+    lea rsi, [rip+req_body]
     mov rdx, 450
     syscall         # __x64_sys_read
     push rax
@@ -128,7 +128,7 @@ get_nl:
     xor rdx, rdx
     mov rax, 1
     mov rdi, 4
-    lea rsi, [rip + res]
+    lea rsi, [rip+res]
     mov rdx, 19
     syscall         # __x64_sys_write
 
