@@ -60,7 +60,7 @@ accept:
 child:
     mov rax, 3
     mov rdi, 3
-    syscall         # __x64_sys_listen
+    syscall         # __x64_sys_close
 
     mov rdi, 4
     mov rax, 0
